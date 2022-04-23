@@ -86,7 +86,7 @@ nav .menu ul li a:hover{
 
 /* header */
 header{
-    height: 300px; background: #F2EFEA url(images/bg1200x300.jpg) no-repeat center bottom; position: relative; text-align: center; padding-left: 30px; padding-top: 280px;
+    height: 300px; background: #F2EFEA url(bg1200x300.jpg) no-repeat center bottom; position: relative; text-align: center; padding-left: 30px; padding-top: 280px;
     /* Setting height of header, the background properties and position. 
     The relative positioning meansthat any items positioned inside of the page element will be positioned in relation to the header element.*/
 }
@@ -163,7 +163,7 @@ section.info{
 }
 section.info article{
     padding: 0 20px 0 400px; /* Adding padding proeprties by setting 0 px on top, 20px on the right, 0 px on the bottom and 400px to the left (this will move alot of the content to the left). */
-    background: url(images/brushes.jpg) no-repeat 0 5px ;
+    background: url(brushes.jpg) no-repeat 0 5px ;
     min-height: 200px; /* to ensure no content is cut-off */
 }
 section.info h2{
