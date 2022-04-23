@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script"></script>
+</head>
+
+<!-- css styling -->
+    <style>
+body{
+  background: whitesmoke;
+}
+.contactForm{
+  position: fixed;
+  margin-top: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 100%;
+  width: fit-content;
+  background: #fff;
+  padding: 80px;
+  border-radius: 10px;
+}
+
+.contactForm h2{
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.contactForm .input_section{
+  margin-bottom: 5px;
+}
+
+.contactForm.input_section input[type="text"],
+.contactForm textarea{
+  border: 3px solid brown;
+  width: 100%;
+  padding: 10px;
+}
+
+.contactForm textarea{
+  resize: none;
+  height: 150px;
+}
+
+.contactForm .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #E4D1B9;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+#errormsg{
+  margin-bottom: 20px;
+  background: rgb(242, 130, 130);
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 500px){
+  
+.contactForm{
+    padding-top: 100px;
+    }
+}
+
+
+</style>
+
+<body>
+ <!--navigation-->
+ <nav>
+    <a class="logo" href="index.html">Yusuf Plant Artistry</a>
+    <div class="menu">
+    <ul>
+        <li>
+            <a title="Home" href="index.html">Home</a>
+        </li>
+        <li>
+            <a title="Services" href="#">Services</a>
+        </li>
+        <li>
+            <a title="Gallery" href="gallery.html">Gallery</a>
+        </li>
+        <li>
+            <a title="Contact" href="contact.html">Contact</a>
+        </li>
+    </ul>
+    </div>
+</nav>
+   
+    <!-- contact form section -->
+        <div class="contactForm">
+          <h2>Contact Me</h2>
+          <div id="errormsg"></div>
+          <form id="myform" onsubmit="return validateContact();">
+            <div class="input_section">
+                <input type="text" placeholder="Enter your name" id="name">
+            </div>
+            <div class="input_section">
+                <input type="text" placeholder="Enter your phone number" id="phone">
+            </div>
+            <div class="input_section">
+                <input type="text" placeholder="Enter your email" id="email">
+            </div>
+            <div class="input_section">
+                <textarea placeholder="Type your message here" id="message"></textarea>
+            </div>
+            <div class="btn">
+                <input type="submit">
+            </div>
+          </form>
+        </div>
+
+</body>
+</html>
+        
+
+            
